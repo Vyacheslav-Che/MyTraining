@@ -30,7 +30,7 @@ else
 //44 5 78 -> 78
 //22 3 9 -> 22
 
-
+/*
 int num1;
 int num2;
 int num3;
@@ -57,3 +57,26 @@ else
 {
     Console.WriteLine("Максимальное число " + num3);
 }
+*/
+
+
+//Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+int num;
+
+Console.WriteLine("Введи число. ");
+num = Convert.ToInt32(Console.ReadLine());
+
+int a = num % 2; 
+
+if(a == 0)
+{
+    Console.WriteLine("Число " + num + " четное");
+}
+else
+{
+    Console.WriteLine("Число " + num + " не четное");
+}
+
+
+
