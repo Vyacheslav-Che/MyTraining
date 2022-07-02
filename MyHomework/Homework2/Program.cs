@@ -31,7 +31,7 @@ OutputSecondNum(num2);
 
 
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-
+/*
 string OutputThirdNum(int num)
 {
     string result = "Третьей цифры нет"; 
@@ -67,6 +67,32 @@ string OutputThirdNum(int num)
 Console.Write("Введите число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 Console.Write(OutputThirdNum(num2));
+*/
+
+
+
+//Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+void CheckingDay(int numDay)
+{
+    while(numDay > 7)
+    {
+        numDay = numDay - 7;
+    }
+
+    if(numDay == 6 || numDay == 7)
+    {
+        Console.Write("Этод день выходной");
+    }
+    else
+    {
+        Console.Write("Этод день не выходной");
+    }
+}
+
+Console.Write("Введите цифру обозначающую день недели: ");
+int num = Convert.ToInt32(Console.ReadLine());
+CheckingDay(num);
 
 
 
