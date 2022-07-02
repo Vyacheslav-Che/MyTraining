@@ -11,6 +11,12 @@ void OutputSecondNum(int num)
         res = res % 10; 
         Console.WriteLine("Вторая цифра числа " + res);
     }
+    if(num < -100 && num > -1000)
+    {
+        res =  num / 10;
+        res = res % 10; 
+        Console.WriteLine("Вторая цифра числа " + res);
+    }
     else
     {
          Console.WriteLine("Не верное число");
@@ -18,7 +24,7 @@ void OutputSecondNum(int num)
 
 }
 
-Console.Write("Введите трехзначное чиссло: ");
+Console.Write("Введите трехзначное число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 OutputSecondNum(num2);
 
