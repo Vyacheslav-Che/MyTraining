@@ -1,5 +1,6 @@
 ﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
+/*
 void ChecPalindrom(int num)
 {
    int a = num;
@@ -28,4 +29,25 @@ void ChecPalindrom(int num)
 Console.Write("Введите пятизначное число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 ChecPalindrom(num2);
+*/
 
+//Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+void OutputsTableCubes(int n)
+{
+    int i = 1;
+    int a = 1;
+
+    while (n >= i)
+    {
+        a = a * a * a; 
+        i++;
+        Console.Write(a + " ");
+        a = i;
+        
+    }
+}
+
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+OutputsTableCubes(num);
