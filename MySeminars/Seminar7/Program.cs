@@ -9,7 +9,7 @@ int[,] CreateRandom2dArray(int rows, int columns, int minValue, int maxValue)
     {
         for (int j = 0; j < columns; j++)
         {
-            newArray[i ,j] = new Random().Next(minValue, maxValue +1);
+            newArray[i ,j] = new Random().Next(minValue, maxValue + 1);
         }
 
     }
