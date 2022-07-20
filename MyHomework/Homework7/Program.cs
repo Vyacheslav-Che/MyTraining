@@ -100,7 +100,7 @@ double[] FindsArithmeticMeanEachColumn(int[,] array2d)
 
 Console.Write("Вводимое количество строк: ");
 int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Входной номер столбца: ");
+Console.Write("Вводимое количество столбцов: ");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.Write("Ввод минимально возможного значения: ");
 int min = Convert.ToInt32(Console.ReadLine());
